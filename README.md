@@ -10,3 +10,7 @@
 ## VUE ROUTER
 1. Add RouterLink
 2. Add routes.js on /src
+
+## NEW FEATURES (1)
+1. Add PostCard component
+2. Fetch datas
