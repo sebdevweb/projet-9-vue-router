@@ -1,9 +1,9 @@
 <template>
   <header class="header">
-    <a href="#" class="header__logo">MyApp</a>
+    <RouterLink to="/" class="header__logo">MyApp</RouterLink>
     <nav>
-      <a href="#blog">Blog</a>
-      <a href="#contact">Contact</a>
+      <RouterLink to="/blog">Blog</RouterLink>
+      <RouterLink to="/contact">Contact</RouterLink>
     </nav>
   </header>
 </template>
