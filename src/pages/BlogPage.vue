@@ -19,9 +19,9 @@ const posts = ref([])
 
 onMounted(() => {
   fetch("https://jsonplaceholder.typicode.com/posts?_limit=10")
-    .then((r) => {
-      if (r.ok) {
-        return r.json();
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
       }
       throw new Error("Impossible de charger les articles depuis le serveur");
     })
@@ -29,7 +29,7 @@ onMounted(() => {
       posts.value = data;
       state.value = "idle";
     })
-    .catch((e) => {
+    .catch((err) => {
       state.value = "error";
     });
 });

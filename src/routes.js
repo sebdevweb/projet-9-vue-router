@@ -8,6 +8,6 @@ export const routes = [
   {path: '/', component: HomePage},
   {path: '/blog', component: BlogPage},
   {path: '/contact', component: ContactPage},
-  {path: '/single', component: SinglePage},
-  {path: '/404', component: NotFoundPage}
+  {path: '/404', component: NotFoundPage},
+  {path: '/blog/:id', component: SinglePage}
 ]
