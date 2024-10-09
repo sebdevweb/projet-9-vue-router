@@ -1,5 +1,19 @@
 <template>
-  <h1>Single</h1>
+  <h1>
+    title
+  </h1>
+  <img :src="thumbnail" alt="">
 </template>
 
-<script setup></script>
+<script setup>
+  import { computed } from 'vue'
+
+
+
+  const props = defineProps({
+    post: Object
+  })
+
+  const thumbnail = computed(() => `https://picsum.photos/id/${post.value.id}/280/180`)
+
+</script>

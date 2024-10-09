@@ -1,11 +1,11 @@
 <template>
   <article class="post">
-    <a :href="link"><img :src="thumbnail" :alt="post.title" /></a>
+    <RouterLink :to="link"><img :src="thumbnail" :alt="post.title" /></RouterLink>
 
     <h2>
-      <a :href="link">
+      <RouterLink :to="link">
         {{ post.title }}
-      </a>
+      </RouterLink>
     </h2>
     <p>
       {{ post.body }}
